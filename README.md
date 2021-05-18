@@ -38,6 +38,9 @@ Terbagi 3 path:
 - Folder `config` digunakan untuk menyimpan konfigurasi yang akan digunakan pada project ini, contohnya adalah konfigurasi untuk server database
 - Folder `database` digunakan untuk menyimpan keperluan database. 
 
+## Work in Github
+## Techstack
+
 ## Weekly History Log
 ### Sprint I
 #### AI/ML
