@@ -1,0 +1,160 @@
+{
+    "intents": [
+        {
+            "tag": "cat dinding",
+            "patterns": [
+                "warna dinding kusam",
+                "dinding kusam",
+                "bosan warna",
+                "dinding lumut",
+                "cat tembok",
+                "pengecatan",
+                "mengecat"
+            ],
+            "responses": [
+                "Kami merekomendasikan pengecatan ulang untuk tembok rumah Anda, ada lagi yang kami bisa bantu?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "cat atap",
+            "patterns": [
+                "warna seng kusam",
+                "warna seng",
+                "cat seng",
+                "pengecatan seng",
+                "seng warna",
+                "warna atap kusam",
+                "warna atap",
+                "cat atap",
+                "pengecatan atap",
+                "atap warna",
+                "atap karat",
+                "seng karat"
+            ],
+            "responses": [
+                "Kami merekomendasikan pengecatan ulang dan perbaikan untuk atap Anda. Ada lagi yang kami bisa bantu?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "atap",
+            "patterns": [
+                "atap bocor",
+                "perbaiki atap",
+                "atap perbaikan",
+                "pasang atap",
+                "pasang seng"
+            ],
+            "responses": [
+                "Pasti tidak menyenangkan jika atap Anda bocor. Ada lagi yang Anda butuhkan?",
+                "Kami siap membantu perbaikan atap Anda. Ada lagi yang Anda perlukan?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "lantai",
+            "patterns": [
+                "pasang keramik",
+                "lantai",
+                "keramik pecah",
+                "semen lantai",
+                "cor lantai"
+            ],
+            "responses": [
+                "Anda benar-benar memerhatikan kenyamanan penghuni rumah ya, lantai memang menjadi salah satu bagian terpenting di rumah Anda. Ada lagi yang Anda butuhkan?",
+                "Kami siap menjadikan lantai rumah Anda lebih baik lagi. Ada lagi yang Anda perlukan?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "wc",
+            "patterns": [
+                "wc",
+                "toilet",
+                "kloset"
+            ],
+            "responses": [
+                "Kami siap membantu memasang WC untuk Anda. Ada lagi yang Anda perlukan?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "tembok",
+            "patterns": [
+                "dinding",
+                "tembok",
+                "bata"
+            ],
+            "responses": [
+                "Layanan perbaikan tembok adalah yang Anda butuhkan saat ini. Tetapi, apa ada hal lain yang bisa kami bantu?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "pintu",
+            "patterns": [
+                "ganti engsel",
+                "pasang engsel",
+                "pasang pintu",
+                "ganti pintu",
+                "pasang gagang",
+                "gagang",
+                "engsel",
+                "pintu",
+                "kusen pintu"
+            ],
+            "responses": [
+                "Sepertinya Anda butuh layanan pemasangan atau perbaikan pintu. Kira-kira, apalagi yang bisa kami bantu?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "jendela",
+            "patterns": [
+                "ganti kaca",
+                "pasang kaca",
+                "pasang jendela",
+                "ganti jendela",
+                "pasang teralis",
+                "jendela",
+                "kaca",
+                "teralis",
+                "kusen jendela"
+            ],
+            "responses": [
+                "Sepertinya Anda butuh layanan pemasangan atau perbaikan jendela. Kira-kira, apalagi yang bisa kami bantu?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "keluar",
+            "patterns": [
+                "tidak ada",
+                "tidak",
+                "sudah",
+                "cukup"
+            ],
+            "responses": [
+                ""
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "siapa",
+            "patterns": [
+                "ya",
+                "ada",
+                "siapa ?",
+                "nama ?",
+                "nama",
+                "siapa",
+                "kamu siapa ?"
+            ],
+            "responses": [
+                "Saya adalah chatbot yang akan merekomendasikan layanan yang Anda butuhkan. Ada yang bisa saya bantu?"
+            ],
+            "context_set": ""
+        }
+    ]
+}

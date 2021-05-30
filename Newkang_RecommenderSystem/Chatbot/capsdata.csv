@@ -1,0 +1,51 @@
+userID,KODE,nama,alamat,layanan,Gaji,Rating,umur
+1,T01,Pramono,"Baciro, Gondokusuman","WC, Atap, Tembok, Pintu, Jendela, Lantai, Cat Dinding",88422,3,34
+2,T02,Laskar,"Bulaksumur, Sleman","WC, Atap, Tembok, Pintu,Lantai, Cat Dinding, Cat Seng",88632,3,29
+3,T03,Andi,"Cokrodiningratan, Jetis","Atap, Tembok, Pintu, Jendela, Cat Dinding",88708,0,30
+4,T04,Yudhi,"Nogotirto, Gamping, Sleman","WC, Atap, Tembok, Cat Dinding, Cat Seng",88664,0,29
+5,T05,Laksono,"Umbulharjo, Yogyakarta","Atap, Tembok, Pintu, Jendela, Lantai, Cat Seng",88939,4,28
+6,T06,Aji,"Panembahan, Kraton, Yogyakarta","Tembok, Atap, Jendela, Lantai, Cat Dinding, Cat Seng",89091,4,31
+7,T07,Bambang,"Demangan, Gondokusomo, Yogyakarta","WC, Atap, Tembok, Pintu, Jendela, Cat Dinding, Cat Seng, Lantai",89621,5,30
+8,T08,Yanto,"Gowongan, Jetis, Yogyakarta","Pintu, Jendela, Atap, Lantai, Cat Dinding",89666,0,34
+9,T09,Mardi,"Pakualaman, Yogyakarta","Atap, Tembok, Pintu, WC, Cat Dinding, Cat Seng",89790,3,32
+10,T10,Mulyono,"Wates, Wates, Kulon Progo","WC, Atap, Tembok, Pintu, Jendela, Lantai, Cat Dinding",89900,4,33
+11,T11,Yanto,"Kraton, Yogyakarta","WC, Atap, Tembok, Pintu,Lantai, Cat Dinding, Cat Seng",88689,3,26
+12,T12,Aji,"Tahunan, Umbulharjo, Yogyakarta","Atap, Tembok, Pintu, Jendela, Cat Dinding",90771,4,31
+13,T13,Pramono,"Prenggan, Kotagede, Yogyakarta","WC, Atap, Tembok, Cat Dinding, Cat Seng",86555,5,28
+14,T14,Laskar,"Warungboroto, Umbulharjo, Yogyakarta","Atap, Tembok, Pintu, Jendela,Lantai, Cat Seng",88765,2,26
+15,T15,Juwari,"Kadipaten, Kraton, Yogyakarta","Tembok, Atap, Jendela, Lantai, Cat Dinding, Cat Seng",86514,3,29
+16,T16,Suyadi,"Pakuncen, Wirobrajan, Yogyakarta","WC, Atap, Tembok, Pintu, Jendela, Lantai, Cat Dinding",87653,3.5,36
+17,T17,Pambudi,"Patehan, Kraton, Yogyakarta","Pintu, Jendela, Atap, Lantai, Cat Dinding, Cat Seng",89700,2.5,34
+18,T18,Jaka,"Nogotirto, Gamping, Yogyakarta","Atap, Tembok, Pintu,WC, Cat Dinding",88664,3,35
+19,T19,Ari,"Rejowinangun, Kotagede, Yogyakarta","WC, Atap, Tembok, Pintu, Jendela, Lantai, Cat Seng",88442,5,30
+20,T20,Pamungkas,"Mantrijeron, Mantrijeron, Yogyakarta","WC, Tembok, Pintu, Jendela, Lantai, Atap, Cat Seng",89072,4,31
+21,T21,Yohan,"Purbayan, Kotagede, Yogyakarta","WC, Atap, Tembok, Pintu,Lantai, Cat Dinding, Cat Seng",88664,2,30
+22,T22,Laskar,"Semaki, Umbulharjo, Yogyakarta","Atap, Tembok, Pintu, Jendela, Cat Dinding",88939,3,34
+23,T23,Andi,"Purwokinanti, Pakualaman, Yogyakarta","WC, Atap, Tembok, Cat Dinding, Cat Seng",89091,4.5,32
+24,T24,Kardi,"Kricak, Tegalrejo, Yogyakarta","Atap, Tembok, Pintu, Jendela,Lantai, Cat Seng",89621,3.6,33
+25,T25,Yanto,"Gedongkiwo, Mantrijeron, Yogyakarta","WC, Atap, Tembok, Pintu,Lantai, Cat Dinding, Cat Seng",89666,2.9,26
+26,T26,Aji,"Demangan, Gondokusomo, Yogyakarta","Atap, Tembok, Pintu, Jendela, Cat Dinding",89790,3,31
+27,T27,Pramono,"Ngampilan, Ngampilan, Yogyakarta","WC, Atap, Tembok, Cat Dinding, Cat Seng",89900,4.5,29
+28,T28,Laskar,"Nogotirto, Gamping, Sleman","Atap, Tembok, Pintu, Jendela,Lantai, Cat Seng",88689,5,36
+29,T29,Juwari,"Notoprajan, Ngampilan, Yogyakarta","Tembok, Atap, Jendela, Lantai, Cat Dinding, Cat Seng",90771,3.5,34
+30,T30,Suyadi,"Tahunan, Umbulharjo, Yogyakarta","WC, Atap, Tembok, Pintu, Jendela, Lantai, Cat Dinding",88689,4,35
+31,T31,Pramono,"Wates, Wates, Kulon Progo","Pintu, Jendela, Atap, Lantai, Cat Dinding, Cat Seng",90771,3,35
+32,T32,Gilang,"Prenggan, Kotagede, Yogyakarta","WC, Atap, Tembok, Pintu,Lantai, Cat Dinding, Cat Seng",86555,4,30
+33,T33,Ari,"Warungboroto, Umbulharjo, Yogyakarta","Atap, Tembok, Pintu, Jendela, Cat Dinding",88765,5,31
+34,T34,Pamungkas,"Kadipaten, Kraton, Yogyakarta","WC, Atap, Tembok, Cat Dinding, Cat Seng",86514,3,30
+35,T35,Yudhi,"Patehan, Kraton, Yogyakarta","Atap, Tembok, Pintu, Jendela,Lantai, Cat Seng",87653,4.5,34
+36,T36,Laksono,"Pakuncen, Wirobrajan, Yogyakarta","WC, Atap, Tembok, Pintu,Lantai, Cat Dinding, Cat Seng",89700,3.6,32
+37,T37,Aji,"Nogotirto, Gamping, Sleman","Atap, Tembok, Pintu, Jendela, Cat Dinding",89790,2.9,33
+38,T38,Bambang,"Sorosutan, Umbulharjo, Yogyakarta","WC, Atap, Tembok, Cat Dinding, Cat Seng",89900,3,26
+39,T39,Yanto,"Nogotirto, Sleman","Atap, Tembok, Pintu, Jendela,Lantai, Cat Seng",88689,4.5,31
+40,T40,Bowo,"Pandeyan, Umbulharjo, Yogyakarta","WC, Atap, Tembok, Cat Dinding, Cat Seng",90771,4,26
+41,T41,Juwari,"Ngestinoharjo, Kesihan, Bantul","Atap, Tembok, Pintu, Jendela,Lantai, Cat Seng",88689,4,31
+42,T42,Suyadi,"Bener, Tegalrejo, Yogyakarta","WC, Atap, Tembok, Pintu,Lantai, Cat Dinding, Cat Seng",90771,5,28
+43,T43,Pramono,"Baciro, Gondokusuman, Yogyakarta","Atap, Tembok, Pintu, Jendela, Cat Dinding",86555,2,26
+44,T44,Gilang,"Bangunharjo, Sewon, Bantul","WC, Atap, Tembok, Cat Dinding, Cat Seng",88422,3,29
+45,T45,Galuh,"Bantul, Yogyakarta","Atap, Tembok, Pintu, Jendela,Lantai, Cat Seng",88632,4,36
+46,T46,Sudirman,"Notoprajan, Ngampilan, Yogyakarta","Tembok, Atap, Jendela, Lantai, Cat Dinding, Cat Seng",88708,3,34
+47,T47,Arip,"Tahunan, Umbulharjo, Yogyakarta","WC, Atap, Tembok, Pintu, Jendela, Lantai, Cat Dinding",88664,3,30
+48,T48,Sujarsi,"Wates, Wates, Yogyakarta","Pintu, Jendela, Atap, Lantai, Cat Dinding, Cat Seng",88939,4.5,34
+49,T49,Karso,"Prenggan, Kotagede, Yogyakarta","Atap, Tembok, Pintu, Jendela,Lantai, Cat Seng",89091,3.6,32
+50,T50,Yarso,"Warungboroto, Umbulharjo, Yogyakarta","WC, Atap, Tembok, Pintu,Lantai, Cat Dinding, Cat Seng",89621,2.9,33
