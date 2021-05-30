@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="15dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/text_rating"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:text="@string/rating"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tukang_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="200dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:text="@string/tukang_name"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/img_poster"
+            app:layout_constraintStart_toStartOf="@+id/img_poster"
+            app:layout_constraintTop_toBottomOf="@+id/text_rating" />
+
+
+        <TextView
+            android:id="@+id/job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="180dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:text="@string/job"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/img_poster"
+            app:layout_constraintStart_toStartOf="@+id/img_poster"
+            app:layout_constraintTop_toBottomOf="@+id/tukang_name" />
+
+
+            <TableRow
+                android:id="@+id/row1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toEndOf="@+id/img_poster"
+                app:layout_constraintStart_toStartOf="@+id/img_poster"
+                app:layout_constraintTop_toBottomOf="@+id/job">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/ic_start"
+                    android:text="@string/pay_method" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/ic_start"
+                    android:text="@string/pay_method" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/ic_start"
+                    android:text="@string/pay_method" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/ic_start"
+                    android:text="@string/pay_method" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/ic_star_outline"
+                    android:text="@string/pay_method" />
+
+            </TableRow>
+
+    <ImageView
+        android:id="@+id/img_poster"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="335dp"
+        android:background="#FF878787"
+        android:padding="2dp"
+        app:layout_constraintStart_toEndOf="@+id/text_rating"
+        app:layout_constraintStart_toStartOf="@+id/text_rating"
+        app:layout_constraintTop_toBottomOf="@+id/text_rating"/>
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle2"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:maxLines="3"
+        android:padding="8dp"
+        android:text="@string/comment"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/row1"
+        app:layout_constraintStart_toStartOf="@+id/row1"
+        app:layout_constraintTop_toBottomOf="@+id/row1" />
+
+    <Button
+        android:id="@+id/btn_back2home"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="250dp"
+        android:background="@drawable/rectangle3"
+        android:padding="0dp"
+        android:text="@string/back"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/comment"
+        app:layout_constraintStart_toStartOf="@+id/item_container"
+        app:layout_constraintTop_toBottomOf="@+id/comment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

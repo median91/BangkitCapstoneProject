@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/payment_deadline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:text="@string/pay_deadline"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TableRow
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle2"
+        android:padding="8dp"
+        app:layout_constraintStart_toEndOf="@+id/payment_deadline"
+        app:layout_constraintStart_toStartOf="@+id/payment_deadline"
+        app:layout_constraintTop_toBottomOf="@+id/payment_deadline">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:padding="2dp"
+            android:text="@string/pay_date"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:gravity="right"
+            android:text="@string/time"
+            android:textColor="#F58F35"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle2"
+        android:padding="8dp"
+        app:layout_constraintStart_toEndOf="@+id/row1"
+        app:layout_constraintStart_toStartOf="@+id/row1"
+        app:layout_constraintTop_toBottomOf="@+id/row1">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="@string/bni"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bni"
+            android:text="@string/pay_method"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </TableRow>
+    </TableRow>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="370dp"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="#878787"
+        app:layout_constraintStart_toEndOf="@+id/row1"
+        app:layout_constraintStart_toStartOf="@+id/row1"
+        app:layout_constraintTop_toBottomOf="@+id/row1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/va_title"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/row1"
+        app:layout_constraintStart_toStartOf="@+id/row1"
+        app:layout_constraintTop_toBottomOf="@+id/row1" />
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="3dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/row1"
+        app:layout_constraintStart_toStartOf="@+id/row1"
+        app:layout_constraintTop_toBottomOf="@+id/row1">
+
+        <TextView
+            android:id="@+id/va_number"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/va_number"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_copy"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_copy"
+            android:text="@string/pay_method"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </TableRow>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="319dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/total_pay_title"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/row1"
+        app:layout_constraintStart_toStartOf="@+id/row1"
+        app:layout_constraintTop_toBottomOf="@+id/row1" />
+
+    <TableRow
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/row1"
+        app:layout_constraintStart_toStartOf="@+id/row1"
+        app:layout_constraintTop_toBottomOf="@+id/row1">
+
+        <TextView
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:text="@string/total_salary"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_info"
+            android:text="@string/pay_method"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/payment_guide"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="288dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:text="@string/payment_guide"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/row2"
+        app:layout_constraintStart_toStartOf="@+id/row2"
+        app:layout_constraintTop_toBottomOf="@+id/row2" />
+
+    <LinearLayout
+        android:id="@+id/linlay1"
+        xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle2"
+        app:layout_constraintStart_toEndOf="@+id/payment_guide"
+        app:layout_constraintStart_toStartOf="@+id/payment_guide"
+        app:layout_constraintTop_toBottomOf="@+id/payment_guide">
+
+        <TextView
+            android:id="@+id/tv_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:padding="8dp"
+            android:gravity="center"
+            android:text="@string/bank"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            android:id="@+id/expand_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            expandableTextView:maxCollapsedLines="0">
+
+            <TextView
+                android:id="@id/expandable_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/black" />
+
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:padding="16dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="right|top"
+                android:background="@android:color/transparent"/>
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
+        r
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
