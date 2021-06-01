@@ -26,27 +26,29 @@ class OrderActivity : AppCompatActivity(), DatePickerFragment.DialogDateListener
         setContentView(binding.root)
         setActionBarTitle(title)
 
-        var quantity = 0
-        val salary = 150000
-        var sum = 150000
+        var quantity = 1
+        val salary = 100
+        var sum = 100
         binding.tvPrice.text = sum.toString()
 
         binding.btnPlus.setOnClickListener {
-            binding.tvPrice.text = sum.toString()
-            quantity++
-            binding.totalTukang.text = quantity.toString()
 
-            sum += (salary * 1)
+            quantity++
+            sum += salary
+            binding.totalTukang.text = quantity.toString()
+            binding.tvPrice.text = sum.toString()
+
         }
 
         binding.btnMinus.setOnClickListener {
-
             if (quantity > 1) {
                 quantity--
-                sum -= (salary * 1)
+                sum -= salary
             }
-            binding.tvPrice.text = sum.toString()
             binding.totalTukang.text = quantity.toString()
+            binding.tvPrice.text = sum.toString()
+
+
 
         }
 

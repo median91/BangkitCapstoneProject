@@ -256,7 +256,7 @@
             android:layout_marginStart="5dp"
             android:padding="2dp"
             android:layout_gravity="center"
-            android:text="@string/time"
+            android:text="@string/work_time"
             android:textColor="@color/black"
             android:textSize="14sp" />
 
@@ -354,7 +354,7 @@
             android:padding="2dp"
             android:maxLines="3"
             android:layout_gravity="center"
-            android:text="@string/optional"
+            android:hint="@string/optional"
             android:textColor="#878787"
             android:textSize="12sp" />
 
