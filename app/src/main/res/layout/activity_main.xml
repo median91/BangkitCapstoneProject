@@ -1,68 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/light_grey"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:gravity="center"
-        android:background="@drawable/round_text_white"
-        android:layout_margin="16dp"
-        android:orientation="horizontal"
-        >
-
-        <ImageView
-            android:id="@+id/ivActivity"
-            android:layout_width="30dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:padding="2dp"
-            android:src="@drawable/ic_baseline_activity"
-            />
-
-        <ImageView
-            android:id="@+id/ivHome"
-            android:layout_width="30dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:padding="2dp"
-            android:layout_margin="90dp"
-            android:src="@drawable/ic_baseline_home"
-            />
-
-        <ImageView
-            android:id="@+id/ivAccount"
-            android:layout_width="30dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:padding="2dp"
-            android:src="@drawable/ic_baseline_account"
-            />
-
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="80dp"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:background="@drawable/shape2"
-        >
-
-    </LinearLayout>
-
-
-
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/mViewPager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
-
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp">
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_homee"/>
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+        </LinearLayout>
+    </TabHost>
 </RelativeLayout>

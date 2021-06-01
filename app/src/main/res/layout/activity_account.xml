@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -12,7 +11,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@drawable/shape2"
-        android:layout_marginTop="80dp">
+        android:layout_marginTop="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -25,13 +24,12 @@
                 app:civ_border_color="@color/black"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/ara"
-                />
+                android:src="@drawable/ara" />
 
             <LinearLayout
                 android:layout_width="226dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -39,7 +37,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Ara"
+                    android:text="@string/user"
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -49,7 +47,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="ara@gmail.com"
+                    android:text="@string/email"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
@@ -58,7 +56,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="+628123456789"
+                    android:text="@string/noHp"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
             </LinearLayout>
@@ -73,12 +71,11 @@
                     android:background="@drawable/round_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_edit"/>
-
+                    android:src="@drawable/ic_baseline_edit"
+                    android:contentDescription="@string/img"/>
 
             </LinearLayout>
-
-
+            
         </LinearLayout>
 
         <View

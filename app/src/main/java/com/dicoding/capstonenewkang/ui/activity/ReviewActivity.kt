@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
 import com.dicoding.capstonenewkang.databinding.ActivityReviewBinding
+import com.dicoding.capstonenewkang.ui.activity.menu.StatusActivity
 
 class ReviewActivity : AppCompatActivity() {
 
@@ -20,7 +21,7 @@ class ReviewActivity : AppCompatActivity() {
         setActionBarTitle(title)
 
         activityReviewBinding.btnBack2home.setOnClickListener {
-            val intent = Intent(this, StatusActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }

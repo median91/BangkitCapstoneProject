@@ -104,6 +104,8 @@
     <string name="copyright">(c) NewKang2021</string>
     <string name="user_name">Process your problem</string>
     <string name="say_homepage">what you want to repair today</string>
+    <string name="user">Rafi</string>
+    <string name="noHp">+62 123456</string>
 
 
 </resources>

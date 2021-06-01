@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CapstoneNewkang">
-
+        <activity android:name=".ui.activity.menu.AccountActivity" />
+        <activity android:name=".ui.activity.menu.HomeActivity" />
+        <activity
+            android:name=".ui.activity.menu.StatusActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".ui.activity.RegisterActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
@@ -22,16 +26,19 @@
         <activity
             android:name=".ui.activity.WelcomeActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity
-            android:name=".ui.activity.StatusActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
-        <activity android:name=".ui.activity.ResultRecOrderActivity" />
-        <activity android:name=".ui.activity.RecOrderActivity" />
-        <activity android:name=".ui.activity.OrderActivity" />
-        <activity android:name=".ui.activity.ReviewActivity" />
-        <activity android:name=".ui.activity.DetailActivity" />
-        <activity android:name=".ui.activity.PaymentActivity" />
+        <activity android:name=".ui.activity.ResultRecOrderActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".ui.activity.RecOrderActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".ui.activity.OrderActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".ui.activity.ReviewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".ui.activity.DetailActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".ui.activity.PaymentActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".ui.activity.SplashActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">

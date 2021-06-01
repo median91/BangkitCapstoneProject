@@ -1,86 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:layout_marginTop="20dp"
         android:background="@drawable/shape2"
-        android:layout_marginTop="80dp">
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_marginLeft="24dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
             android:orientation="vertical">
+
             <TextView
                 android:id="@+id/tvNameHomepage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="Hello, Ara"
                 android:textColor="@color/black"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/say_homepage"
-                android:textColor="@color/light_orange"/>
+                android:textColor="@color/light_orange" />
         </LinearLayout>
 
 
         <ImageView
             android:layout_width="300dp"
             android:layout_height="150dp"
-            android:src="@drawable/slider1"
             android:layout_gravity="center"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/img"
+            android:src="@drawable/slider1" />
 
         <LinearLayout
-            android:layout_marginTop="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
             android:background="@drawable/round_text"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
 
 
             <ImageButton
-                android:layout_margin="8dp"
+                android:id="@+id/service_toilet"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:layout_margin="8dp"
                 android:background="@drawable/round_circle"
-                android:src="@drawable/ic_baseline_settings_24"/>
+                android:contentDescription="@string/img"
+                android:src="@drawable/toilet" />
+
             <ImageButton
-                android:layout_margin="8dp"
+                android:id="@+id/service_door"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:layout_margin="8dp"
                 android:background="@drawable/round_circle"
-                android:src="@drawable/ic_baseline_settings_24"/>
+                android:contentDescription="@string/img"
+                android:src="@drawable/door" />
+
             <ImageButton
-                android:layout_margin="8dp"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:layout_margin="8dp"
                 android:background="@drawable/round_circle"
-                android:src="@drawable/ic_baseline_settings_24"/>
+                android:contentDescription="@string/img"
+                android:src="@drawable/paint" />
+
             <ImageButton
-                android:layout_margin="8dp"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:layout_margin="8dp"
                 android:background="@drawable/round_circle"
-                android:src="@drawable/ic_baseline_settings_24"/>
+                android:contentDescription="@string/img"
+                android:src="@drawable/window" />
+
             <ImageButton
-                android:layout_margin="8dp"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:layout_margin="8dp"
                 android:background="@drawable/round_circle"
-                android:src="@drawable/ic_baseline_settings_24"/>
+                android:contentDescription="@string/img"
+                android:src="@drawable/wall" />
 
         </LinearLayout>
 
@@ -88,53 +100,55 @@
             android:id="@+id/btnRepairmanNow"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/repairman_now"
-            android:background="@drawable/round_button"
-            android:textStyle="bold"
-            android:textSize="16dp"
             android:layout_marginLeft="64dp"
-            android:layout_marginRight="64dp"
             android:layout_marginTop="16dp"
-            android:textColor="@color/black"/>
+            android:layout_marginRight="64dp"
+            android:background="@drawable/round_button"
+            android:text="@string/repairman_now"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_gravity="center"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="100dp"
-                android:src="@drawable/information1"/>
+                android:contentDescription="@string/img"
+                android:src="@drawable/information1" />
+
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="100dp"
-                android:layout_marginLeft="8dp"
-                android:src="@drawable/information2"/>
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/img"
+                android:src="@drawable/information2" />
         </LinearLayout>
-        
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_gravity="center"
-            android:layout_marginTop="8dp">
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="100dp"
-                android:src="@drawable/information3"/>
+                android:contentDescription="@string/img"
+                android:src="@drawable/information3" />
+
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="100dp"
-                android:layout_marginLeft="8dp"
-                android:src="@drawable/information4"/>
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/img"
+                android:src="@drawable/information4" />
         </LinearLayout>
     </LinearLayout>
-
-
-
-
 </RelativeLayout>

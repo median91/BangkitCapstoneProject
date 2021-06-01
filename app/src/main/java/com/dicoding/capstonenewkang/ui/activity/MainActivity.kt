@@ -1,88 +1,49 @@
 package com.dicoding.capstonenewkang.ui.activity
 
-import androidx.appcompat.app.AppCompatActivity
+import android.app.TabActivity
+import android.content.Intent
+import android.content.res.Resources
 import android.os.Bundle
-import android.widget.ImageView
-import androidx.viewpager.widget.ViewPager
+import android.widget.TabHost
+import android.widget.TabHost.TabSpec
 import com.dicoding.capstonenewkang.R
-import com.dicoding.capstonenewkang.adapter.pager.PagerAdapterHomepage
+import com.dicoding.capstonenewkang.ui.activity.menu.AccountActivity
+import com.dicoding.capstonenewkang.ui.activity.menu.HomeActivity
+import com.dicoding.capstonenewkang.ui.activity.menu.StatusActivity
 
-class MainActivity : AppCompatActivity() {
 
-    private lateinit var ivActivity: ImageView
-    private lateinit var ivHome: ImageView
-    private lateinit var ivAccount: ImageView
-
-    private lateinit var mViewPager: ViewPager
-    private lateinit var mPagerAdapterHomepage: PagerAdapterHomepage
+class MainActivity : TabActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //init views
-        mViewPager = findViewById(R.id.mViewPager)
+        val ressources: Resources = resources
+        val tabHost: TabHost = getTabHost()
 
-        ivActivity = findViewById(R.id.ivActivity)
-        ivHome = findViewById(R.id.ivHome)
-        ivAccount = findViewById(R.id.ivAccount)
+        val intentActivity= Intent().setClass(this, StatusActivity::class.java)
+        val tabStatus: TabSpec = tabHost
+            .newTabSpec("Status")
+            .setIndicator("", ressources.getDrawable(R.drawable.icon_activity))
+            .setContent(intentActivity)
 
+        val intentHome = Intent().setClass(this, HomeActivity::class.java)
+        val tabHome: TabSpec = tabHost
+            .newTabSpec("Home")
+            .setIndicator("", ressources.getDrawable(R.drawable.icon_home))
+            .setContent(intentHome)
 
-        //onClick listener
-        ivActivity.setOnClickListener {
-            mViewPager.currentItem = 0
-        }
-        ivHome.setOnClickListener {
-            mViewPager.currentItem = 1
-        }
-        ivAccount.setOnClickListener {
-            mViewPager.currentItem = 2
-        }
+        val intentAccount = Intent().setClass(this, AccountActivity::class.java)
+        val tabAccount = tabHost
+            .newTabSpec("Account")
+            .setIndicator("", ressources.getDrawable(R.drawable.icon_account))
+            .setContent(intentAccount)
 
+        tabHost.addTab(tabStatus)
+        tabHost.addTab(tabHome)
+        tabHost.addTab(tabAccount)
 
-        mPagerAdapterHomepage = PagerAdapterHomepage(supportFragmentManager)
-        mViewPager.adapter = mPagerAdapterHomepage
-        mViewPager.offscreenPageLimit = 3
-
-        mViewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
-            override fun onPageScrollStateChanged(state: Int) {
-
-            }
-
-            override fun onPageScrolled(
-                position: Int,
-                positionOffset: Float,
-                positionOffsetPixels: Int
-            ) {
-
-            }
-
-            override fun onPageSelected(position: Int) {
-                changeTabs(position)
-            }
-        })
-
-        //default tab
-        mViewPager.currentItem = 1
-        ivHome.setImageResource(R.drawable.ic_baseline_home_active)
-    }
-
-    private fun changeTabs(position: Int) {
-        if (position == 0) {
-            ivActivity.setImageResource(R.drawable.ic_baseline_activity_active)
-            ivHome.setImageResource(R.drawable.ic_baseline_home)
-            ivAccount.setImageResource(R.drawable.ic_baseline_account)
-        }
-        else if (position == 1) {
-            ivActivity.setImageResource(R.drawable.ic_baseline_activity)
-            ivHome.setImageResource(R.drawable.ic_baseline_home_active)
-            ivAccount.setImageResource(R.drawable.ic_baseline_account)
-        }
-        else {
-            ivActivity.setImageResource(R.drawable.ic_baseline_activity)
-            ivHome.setImageResource(R.drawable.ic_baseline_home)
-            ivAccount.setImageResource(R.drawable.ic_baseline_account_active)
-        }
+        tabHost.setCurrentTab(1);
     }
 }

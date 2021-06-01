@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="16dp"
-    android:layout_marginEnd="16dp"
+    android:padding="20dp"
     android:background="#FFFFFF">
 
     <TextView
@@ -16,7 +15,7 @@
         android:gravity="start"
         android:text="@string/title_service"
         android:textColor="@color/black"
-        android:textSize="14sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,7 +25,7 @@
         android:id="@+id/order_detail"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/rectangle2"
         android:ellipsize="end"
         android:gravity="start"
@@ -71,7 +70,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:background="@drawable/person"
+                android:background="@drawable/worker"
                 android:padding="3dp" />
 
             <LinearLayout
@@ -165,7 +164,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:background="@drawable/person"
+            android:background="@drawable/worker"
             android:padding="3dp" />
 
         <LinearLayout
@@ -305,7 +304,7 @@
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_gravity="center"
-            android:layout_marginStart="230dp"
+            android:layout_marginStart="220dp"
             android:layout_marginEnd="2dp"
             android:background="@drawable/ic_more"
             android:padding="3dp" />
@@ -347,7 +346,7 @@
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_gravity="center"
-            android:layout_marginStart="240dp"
+            android:layout_marginStart="230dp"
             android:layout_marginEnd="2dp"
             android:background="@drawable/ic_more"
             android:padding="3dp" />
@@ -475,7 +474,7 @@
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_gravity="center"
-            android:layout_marginStart="290dp"
+            android:layout_marginStart="270dp"
             android:background="@drawable/ic_down"
             android:padding="3dp" />
 
@@ -507,7 +506,7 @@
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_gravity="center"
-            android:layout_marginStart="295dp"
+            android:layout_marginStart="275dp"
             android:background="@drawable/ic_down"
             android:padding="3dp" />
 
@@ -516,7 +515,7 @@
     <TableRow
         android:id="@+id/row9"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="50dp"
         android:padding="6dp"
         android:background="@drawable/rectangle3"
@@ -534,7 +533,7 @@
             android:text="@string/total"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:textSize="12sp" />
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="55dp"
@@ -545,13 +544,13 @@
             android:text="@string/total_salary"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:textSize="12sp" />
+            android:textSize="14sp" />
     </TableRow>
 
     <ImageButton
         android:id="@+id/btn_right"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_marginTop="15dp"
         android:layout_gravity="center"
         android:layout_marginStart="340dp"

@@ -1,4 +1,4 @@
-package com.dicoding.capstonenewkang.ui.activity
+package com.dicoding.capstonenewkang.ui.activity.menu
 
 import android.content.res.Resources
 import android.os.Bundle

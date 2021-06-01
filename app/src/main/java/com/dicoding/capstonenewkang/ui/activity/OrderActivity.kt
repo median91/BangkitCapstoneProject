@@ -1,18 +1,25 @@
 package com.dicoding.capstonenewkang.ui.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
-import com.dicoding.capstonenewkang.R
+import com.dicoding.capstonenewkang.databinding.ActivityOrderBinding
 
 class OrderActivity : AppCompatActivity() {
 
     private var title = "Service"
+    private lateinit var binding: ActivityOrderBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_order)
+        binding = ActivityOrderBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         setActionBarTitle(title)
+
+        binding.btnRight.setOnClickListener {
+            startActivity(Intent(this, PaymentActivity::class.java))
+        }
     }
 
     private fun setActionBarTitle(title: String) {

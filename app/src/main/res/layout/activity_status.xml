@@ -1,36 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_alignParentStart="true"
-    android:layout_alignParentTop="true"
-    android:background="@drawable/rectangle1"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tab_Layout"
-        style="@style/ChipTabLayout"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginTop="50dp"
-        android:layout_gravity="center"
-        android:minWidth="90dp"
-        android:minHeight="?attr/actionBarSize"
-        android:background="@android:color/transparent"
-        app:tabGravity="fill"
-        app:tabIndicatorGravity="center"
-        app:tabIndicatorHeight="0dp"
-        app:tabPadding="2dp"
-        app:tabMode="scrollable" />
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape2"
+        android:orientation="vertical">
 
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/view_pager"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="?android:actionBarSize"
-        android:layout_weight="1" />
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_Layout"
+            style="@style/ChipTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:minHeight="?attr/actionBarSize"
+            app:tabGravity="fill"
+            app:tabIndicatorGravity="center"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="scrollable" />
 
-</LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</RelativeLayout>
