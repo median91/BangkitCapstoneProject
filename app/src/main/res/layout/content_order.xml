@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/text_service"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:text="@string/title_service"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/order_detail"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rectangle2"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:maxLines="3"
+        android:padding="8dp"
+        android:text="@string/order_detail"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/text_service"
+        app:layout_constraintTop_toTopOf="@+id/text_service"
+        android:autofillHints="@string/hint" />
+
+    <TextView
+        android:id="@+id/choose_tukang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:text="@string/choose"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/text_service"
+        app:layout_constraintStart_toStartOf="@+id/text_service"
+        app:layout_constraintTop_toTopOf="@+id/order_detail" />
+
+
+    <TableRow
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:background="@drawable/rectangle2"
+        app:layout_constraintStart_toEndOf="@+id/choose_tukang"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choose_tukang">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/worker"
+            android:padding="3dp"
+            android:contentDescription="@string/img"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:padding="2dp"
+                android:text="@string/job"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:padding="2dp"
+                android:text="@string/total_salary"
+                android:textColor="#F58F35"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_minus"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="120dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/minus"
+            android:padding="5dp"
+            android:contentDescription="@string/img"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="1dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/total_tukang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/total_tukang"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_gravity="center"
+                android:background="#F58F35"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_plus"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/plus"
+            android:padding="3dp"
+            android:contentDescription="@string/img"/>
+
+    </TableRow>
+
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ellipsize="end"
+        android:layout_marginStart="290dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/note"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/row1"
+        app:layout_constraintStart_toStartOf="@+id/row1"
+        app:layout_constraintTop_toTopOf="@+id/row1" />
+
+    <TextView
+        android:id="@+id/schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:text="@string/title_schedule"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/note"
+        app:layout_constraintStart_toStartOf="@+id/note"
+        app:layout_constraintTop_toTopOf="@+id/note" />
+
+    <TableRow
+        android:id="@+id/row3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:background="@drawable/rectangle2"
+        app:layout_constraintStart_toEndOf="@+id/schedule"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedule">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/ic_calender"
+            android:padding="3dp"
+            android:contentDescription="@string/img"/>
+
+
+        <TextView
+            android:id="@+id/schedule_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:padding="2dp"
+            android:layout_gravity="center"
+            android:text="@string/do_date"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/btn_datePicker"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="200dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/ic_more"
+            android:padding="3dp"
+            android:contentDescription="@string/img"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:background="@drawable/rectangle2"
+        app:layout_constraintStart_toEndOf="@+id/row3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row3">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/ic_time"
+            android:padding="3dp"
+            android:contentDescription="@string/img"/>
+
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:padding="2dp"
+            android:layout_gravity="center"
+            android:text="@string/time"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+    <TextView
+        android:id="@+id/attach_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ellipsize="end"
+        android:text="@string/title_photo"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/row4"
+        app:layout_constraintStart_toStartOf="@+id/row4"
+        app:layout_constraintTop_toTopOf="@+id/row4" />
+
+    <TableRow
+        android:id="@+id/row5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="6dp"
+        android:background="@drawable/rectangle2"
+        app:layout_constraintStart_toEndOf="@+id/attach_photo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/attach_photo">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:padding="2dp"
+            android:layout_gravity="center"
+            android:hint="@string/optional"
+            android:textColor="#878787"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/btn_pick_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="280dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/ic_photo"
+            android:padding="3dp"
+            android:contentDescription="@string/img"/>
+
+    </TableRow>
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/row5"
+        app:layout_constraintStart_toStartOf="@+id/row5"
+        app:layout_constraintTop_toBottomOf="@+id/row5"
+        android:contentDescription="@string/img"/>
+
+    <TextView
+        android:id="@+id/title_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:ellipsize="end"
+        android:text="@string/title_address"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/iv_photo"
+        app:layout_constraintStart_toStartOf="@+id/iv_photo"
+        app:layout_constraintTop_toTopOf="@+id/iv_photo" />
+
+    <TableRow
+        android:id="@+id/row6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="6dp"
+        android:background="@drawable/rectangle2"
+        app:layout_constraintStart_toEndOf="@+id/title_address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_address">
+
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:padding="2dp"
+            android:maxLines="3"
+            android:layout_gravity="center"
+            android:text="@string/optional"
+            android:textColor="#878787"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/ic_edit"
+            android:padding="3dp"
+            android:contentDescription="@string/img"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="6dp"
+        android:background="@drawable/rectangle2"
+        app:layout_constraintStart_toEndOf="@+id/row6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row6">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:padding="2dp"
+            android:text="@string/kecamatan"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="250dp"
+            android:background="@drawable/ic_down"
+            android:padding="3dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="6dp"
+        android:background="@drawable/rectangle2"
+        app:layout_constraintStart_toEndOf="@+id/row7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row7">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:padding="2dp"
+            android:text="@string/kelurahan"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="255dp"
+            android:background="@drawable/ic_down"
+            android:padding="3dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row9"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:padding="6dp"
+        android:background="@drawable/rectangle3"
+        app:layout_constraintStart_toEndOf="@+id/row7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row7">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:padding="2dp"
+            android:text="@string/total"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="220dp"
+            android:padding="2dp"
+            android:text="@string/total_salary"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+    </TableRow>
+
+    <ImageButton
+        android:id="@+id/btn_right"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="340dp"
+        android:background="@drawable/right"
+        android:padding="3dp"
+        app:layout_constraintStart_toEndOf="@+id/row8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row8"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

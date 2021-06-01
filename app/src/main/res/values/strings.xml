@@ -106,6 +106,9 @@
     <string name="say_homepage">what you want to repair today</string>
     <string name="user">Rafi</string>
     <string name="noHp">+62 123456</string>
+    <string name="hint">Type your detaill problem</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
