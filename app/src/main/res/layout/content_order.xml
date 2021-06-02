@@ -370,8 +370,40 @@
 
     </TableRow>
 
+<!--    <TableRow-->
+<!--        android:id="@+id/row7"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:padding="6dp"-->
+<!--        android:background="@drawable/rectangle2"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/row6"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/row6">-->
+
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginStart="5dp"-->
+<!--            android:padding="2dp"-->
+<!--            android:text="@string/kecamatan"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="14sp" />-->
+
+<!--        <ImageButton-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginStart="250dp"-->
+<!--            android:background="@drawable/ic_down"-->
+<!--            android:padding="3dp" />-->
+
+<!--    </TableRow>-->
+
     <TableRow
-        android:id="@+id/row7"
+        android:id="@+id/row8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -382,55 +414,16 @@
         app:layout_constraintTop_toBottomOf="@+id/row6">
 
 
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="5dp"
             android:padding="2dp"
-            android:text="@string/kecamatan"
+            android:hint="@string/detail_address"
             android:textColor="@color/black"
             android:textSize="14sp" />
 
-        <ImageButton
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="250dp"
-            android:background="@drawable/ic_down"
-            android:padding="3dp" />
-
-    </TableRow>
-
-    <TableRow
-        android:id="@+id/row8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:padding="6dp"
-        android:background="@drawable/rectangle2"
-        app:layout_constraintStart_toEndOf="@+id/row7"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/row7">
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="5dp"
-            android:padding="2dp"
-            android:text="@string/kelurahan"
-            android:textColor="@color/black"
-            android:textSize="14sp" />
-
-        <ImageButton
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="255dp"
-            android:background="@drawable/ic_down"
-            android:padding="3dp" />
 
     </TableRow>
 
@@ -438,12 +431,12 @@
         android:id="@+id/row9"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="50dp"
-        android:padding="6dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/rectangle3"
-        app:layout_constraintStart_toEndOf="@+id/row7"
+        android:padding="6dp"
+        app:layout_constraintStart_toEndOf="@+id/row4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/row7">
+        app:layout_constraintTop_toBottomOf="@+id/row4">
 
 
         <TextView
@@ -454,10 +447,11 @@
             android:padding="2dp"
             android:text="@string/total"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/tvTotalPrice"
             android:layout_width="55dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -465,8 +459,8 @@
             android:padding="2dp"
             android:text="@string/total_salary"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textStyle="bold" />
     </TableRow>
 
     <ImageButton

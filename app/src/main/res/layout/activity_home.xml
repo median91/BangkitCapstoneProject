@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,14 +33,19 @@
                 android:textColor="@color/light_orange" />
         </LinearLayout>
 
-
-        <ImageView
-            android:layout_width="300dp"
-            android:layout_height="150dp"
+        <com.synnapps.carouselview.CarouselView
             android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:contentDescription="@string/img"
-            android:src="@drawable/slider1" />
+            android:id="@+id/carouselView"
+            android:layout_width="360dp"
+            android:layout_height="170dp"
+            app:fillColor="@color/light_orange"
+            app:pageColor="@color/black"
+            android:layout_marginTop="8dp"
+            app:radius="4dp"
+            app:slideInterval="3000"
+            app:strokeColor="@color/light_grey"
+            app:autoPlay="true"
+            app:strokeWidth="1dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
