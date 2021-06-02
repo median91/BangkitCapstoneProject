@@ -26,8 +26,9 @@ class OrderActivity : AppCompatActivity() {
         setActionBarTitle(title)
 
         var quantity = 1
-        val salary = 150000
-        var sum = 150000
+
+        val salary = 100000
+        var sum = 100000
 
         binding.tvPrice.text = sum.toString()
         binding.tvTotalPrice.text = sum.toString()

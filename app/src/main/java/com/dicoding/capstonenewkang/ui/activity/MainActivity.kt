@@ -10,9 +10,11 @@ import com.dicoding.capstonenewkang.R
 import com.dicoding.capstonenewkang.ui.activity.menu.AccountActivity
 import com.dicoding.capstonenewkang.ui.activity.menu.HomeActivity
 import com.dicoding.capstonenewkang.ui.activity.menu.StatusActivity
+import com.synnapps.carouselview.CarouselView
 
 
 class MainActivity : TabActivity() {
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,5 +47,9 @@ class MainActivity : TabActivity() {
         tabHost.addTab(tabAccount)
 
         tabHost.setCurrentTab(1);
+
+
+
+
     }
 }
