@@ -3,7 +3,7 @@ package com.dicoding.capstonenewkang.ui.activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
-import com.dicoding.capstonenewkang.R
+import com.dicoding.capstonenewkang.databinding.ActivityDetailBinding
 
 class DetailActivity : AppCompatActivity() {
     companion object {
@@ -11,10 +11,13 @@ class DetailActivity : AppCompatActivity() {
     }
 
     private var title = "Order Summary"
+    private lateinit var binding : ActivityDetailBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_detail)
+        binding = ActivityDetailBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
         setActionBarTitle(title)
     }
     private fun setActionBarTitle(title: String) {

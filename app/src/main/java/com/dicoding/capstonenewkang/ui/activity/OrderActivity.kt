@@ -5,31 +5,32 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
-import com.dicoding.capstonenewkang.databinding.ContentOrderBinding
-import com.dicoding.capstonenewkang.ui.fragment.DatePickerFragment
+import com.dicoding.capstonenewkang.databinding.ActivityOrderBinding
+import com.google.android.material.datepicker.MaterialDatePicker
 import java.text.SimpleDateFormat
 import java.util.*
 
-class OrderActivity : AppCompatActivity(), DatePickerFragment.DialogDateListener {
+class OrderActivity : AppCompatActivity() {
 
     private var title = "Service"
-    private lateinit var binding: ContentOrderBinding
+    private lateinit var binding: ActivityOrderBinding
 
     companion object {
-        private const val DATE_PICKER_TAG = "DatePicker"
         const val REQUEST_CODE = 100
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ContentOrderBinding.inflate(layoutInflater)
+        binding = ActivityOrderBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setActionBarTitle(title)
 
         var quantity = 1
-        val salary = 100
-        var sum = 100
+        val salary = 150000
+        var sum = 150000
+
         binding.tvPrice.text = sum.toString()
+        binding.tvTotalPrice.text = sum.toString()
 
         binding.btnPlus.setOnClickListener {
 
@@ -37,6 +38,7 @@ class OrderActivity : AppCompatActivity(), DatePickerFragment.DialogDateListener
             sum += salary
             binding.totalTukang.text = quantity.toString()
             binding.tvPrice.text = sum.toString()
+            binding.tvTotalPrice.text = sum.toString()
 
         }
 
@@ -47,15 +49,12 @@ class OrderActivity : AppCompatActivity(), DatePickerFragment.DialogDateListener
             }
             binding.totalTukang.text = quantity.toString()
             binding.tvPrice.text = sum.toString()
-
-
+            binding.tvTotalPrice.text = sum.toString()
 
         }
 
         binding.btnDatePicker.setOnClickListener {
-            val datePickerFragment = DatePickerFragment()
-            datePickerFragment.show(supportFragmentManager, DATE_PICKER_TAG)
-
+            showDataRangePicker()
         }
 
         binding.btnPickImage.setOnClickListener {
@@ -67,14 +66,39 @@ class OrderActivity : AppCompatActivity(), DatePickerFragment.DialogDateListener
         }
     }
 
-    override fun onDialogDateSet(tag: String?, year: Int, month: Int, dayOfMonth: Int) {
+    private fun showDataRangePicker() {
 
-        val calendar = Calendar.getInstance()
-        calendar.set(year, month, dayOfMonth)
-        val dateFormat = SimpleDateFormat("dd-MM- yyyy", Locale.getDefault())
+        val dateRangePicker = MaterialDatePicker
+                .Builder.dateRangePicker()
+                .setTitleText("Select Date")
+                .build()
 
-        binding.scheduleDate.text = dateFormat.format(calendar.time)
+        dateRangePicker.show(
+            supportFragmentManager,
+            "date_range_picker"
+        )
+
+        dateRangePicker.addOnPositiveButtonClickListener { dateSelected ->
+
+            val startDate = dateSelected.first
+            val endDate = dateSelected.second
+
+            if (startDate != null && endDate != null) {
+                binding.scheduleDate.text = "${convertLongToTime(startDate)} - " + "${convertLongToTime(endDate)}"
+            }
+        }
+
     }
+
+    private fun convertLongToTime(time: Long): String {
+        val date = Date(time)
+        val format = SimpleDateFormat(
+            "dd.MM.yyyy",
+            Locale.getDefault()
+        )
+        return format.format(date)
+    }
+
 
     private fun pickImageGallery() {
         val intent = Intent(Intent.ACTION_PICK)

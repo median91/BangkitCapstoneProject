@@ -28,18 +28,22 @@
         <activity
             android:name=".ui.activity.WelcomeActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-
-        <activity android:name=".ui.activity.ResultRecOrderActivity"
+        <activity
+            android:name=".ui.activity.ResultRecOrderActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".ui.activity.RecOrderActivity"
+        <activity
+            android:name=".ui.activity.RecOrderActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".ui.activity.OrderActivity"
+        <activity
+            android:name=".ui.activity.OrderActivity"/>
+        <activity
+            android:name=".ui.activity.ReviewActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".ui.activity.ReviewActivity"
+        <activity
+            android:name=".ui.activity.DetailActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".ui.activity.DetailActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".ui.activity.PaymentActivity"
+        <activity
+            android:name=".ui.activity.PaymentActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".ui.activity.SplashActivity"
