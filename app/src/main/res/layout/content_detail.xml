@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="15dp"
+    android:padding="10dp"
+    android:background="@drawable/rectangle2">
+
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/tv_id"
+                android:textColor="#878787"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/id_order"
+                android:layout_marginEnd="10dp"
+                android:gravity="right"
+                android:text="@string/id_order"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+    <TextView
+        android:id="@+id/tv_service"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="325dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:text="@string/tv_service"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/row1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row1"/>
+
+    <ImageView
+        android:id="@+id/img_service"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="40dp"
+        android:padding="2dp"
+        android:contentDescription="@string/img"
+        app:layout_constraintStart_toEndOf="@+id/row1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row1" />
+
+    <TextView
+        android:id="@+id/tv_tukang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="290dp"
+        android:layout_marginStart="40dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:text="@string/tv_tukang"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_service"
+        app:layout_constraintStart_toStartOf="@+id/tv_service"
+        app:layout_constraintTop_toBottomOf="@+id/tv_service" />
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toEndOf="@id/tv_tukang"
+            app:layout_constraintStart_toStartOf="@+id/tv_tukang"
+            app:layout_constraintTop_toBottomOf="@id/tv_tukang">
+
+            <TextView
+                android:id="@+id/total_tukang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/total_tukang"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:padding="2dp"
+                android:text="@string/mul"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/salary_tukang"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/salary"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/total_salary_tukang"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:text="@string/total_salary"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </TableRow>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="#878787"
+        app:layout_constraintStart_toEndOf="@id/tv_tukang"
+        app:layout_constraintStart_toStartOf="@+id/tv_tukang"
+        app:layout_constraintTop_toBottomOf="@id/row2" />
+
+    <TextView
+        android:id="@+id/tv_asisten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:text="@string/tv_asisten"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_service"
+        app:layout_constraintStart_toStartOf="@+id/tv_service"
+        app:layout_constraintTop_toBottomOf="@+id/line"/>
+
+
+        <TableRow
+            android:id="@+id/row3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toEndOf="@id/tv_asisten"
+            app:layout_constraintStart_toStartOf="@+id/tv_asisten"
+            app:layout_constraintTop_toBottomOf="@id/tv_asisten">
+
+            <TextView
+                android:id="@+id/total_asisten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:padding="2dp"
+                android:text="@string/total_tukang"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:padding="2dp"
+                android:text="@string/mul"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/salary_asisten"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/salary"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/total_salary_asisten"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:text="@string/total_salary"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </TableRow>
+
+    <ImageView
+        android:id="@+id/img_service1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="340dp"
+        android:padding="2dp"
+        android:contentDescription="@string/img"
+        app:layout_constraintStart_toEndOf="@+id/row1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="#878787"
+        app:layout_constraintStart_toEndOf="@+id/tv_asisten"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/row3" />
+
+
+
+        <TableRow
+            android:id="@+id/row4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/img_service1"
+            app:layout_constraintStart_toStartOf="@+id/img_service1"
+            app:layout_constraintTop_toBottomOf="@+id/line2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:padding="2dp"
+                android:text="@string/title_date"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_order_date"
+                android:gravity="right"
+                android:text="@string/order_date"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toEndOf="@+id/img_service1"
+            app:layout_constraintStart_toStartOf="@+id/img_service1"
+            app:layout_constraintTop_toBottomOf="@+id/row4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:padding="2dp"
+                android:text="@string/title_schedule"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_do_date"
+                android:gravity="right"
+                android:text="@string/do_date"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toEndOf="@+id/img_service1"
+            app:layout_constraintStart_toStartOf="@+id/img_service1"
+            app:layout_constraintTop_toBottomOf="@+id/row5" >
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:padding="2dp"
+                android:text="@string/pay_method"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="12dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/bni"
+                android:text="@string/pay_method"
+                android:textColor="@color/black"
+                android:contentDescription="@string/img" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:gravity="right"
+                android:text="@string/bni"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/linlay4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="4dp"
+            android:background="@drawable/rectangle3"
+            app:layout_constraintStart_toEndOf="@+id/img_service1"
+            app:layout_constraintStart_toStartOf="@+id/img_service1"
+            app:layout_constraintTop_toBottomOf="@+id/row6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_marginStart="6dp"
+                android:text="@string/total"
+                android:textSize="12sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_total_payment"
+                android:layout_marginEnd="10dp"
+                android:gravity="right"
+                android:text="@string/total_salary"
+                android:textSize="12sp"
+                android:textColor="@color/black"/>
+        </TableRow>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

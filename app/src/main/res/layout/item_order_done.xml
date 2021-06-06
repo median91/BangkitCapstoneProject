@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_container"
+    android:layout_width="match_parent"
+    android:layout_height="105dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/rectangle4">
+
+    <ImageView
+        android:id="@+id/img_service"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.176"
+        android:contentDescription="@string/img"/>
+
+    <TextView
+        android:id="@+id/tv_service"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="@string/tv_tukang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_service"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/do_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:textColor="#40000000"
+        android:padding="5dp"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/img_service"
+        app:layout_constraintTop_toBottomOf="@+id/tv_service"
+        tools:text="@string/do_date" />
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="15dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:text="@string/total"
+        app:layout_constraintStart_toEndOf="@+id/img_service"
+        app:layout_constraintTop_toBottomOf="@+id/do_date"/>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:textColor="#F58F35"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/img_service"
+        app:layout_constraintTop_toBottomOf="@+id/do_date"
+        tools:text="@string/salary" />
+
+    <Button
+        android:id="@+id/btn_review"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/rectangle3"
+        android:padding="0dp"
+        android:text="@string/review"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
