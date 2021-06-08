@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">Newkang</string>
+
+
+    <string name="lets_pay">Lets Pay</string>
+    <string name="todo">To Do</string>
+    <string name="go">Go</string>
+    <string name="done">Done</string>
+
+    <string name="tv_service">Service</string>
+    <string name="tv_tukang">Tukang</string>
+    <string name="tv_asisten">Ast. Tukang</string>
+
+    <string name="title_date">Order Date</string>
+    <string name="title_pay_date">Pay before</string>
+    <string name="order_date">dd/mm/yyyy</string>
+    <string name="pay_date">dd/mm/yyyy</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="do_date">dd/mm/yyyy</string>
+
+    <string name="payment">Payment</string>
+    <string name="Detail">Detail</string>
+    <string name="review">Review</string>
+    <string name="tv_id">Order ID</string>
+    <string name="id_order">NK-12345</string>
+    <string name="title_schedule">Schedule</string>
+    <string name="pay_method">Payment Method</string>
+
+    <string name="total_tukang">1</string>
+    <string name="total">Total:</string>
+    <string name="salary">Rp.0</string>
+    <string name="total_salary">Rp.0,-</string>
+    <string name="mul">x</string>
+
+    <string name="time">hh:mm:ss</string>
+    <string name="pay_deadline">Payment Deadline</string>
+    <string name="total_pay_title">Total Payment</string>
+    <string name="payment_guide">How to Payment</string>
+    <string name="bni">BNI Virtual Account</string>
+    <string name="va_number">123456789</string>
+    <string name="va_title">Virtual Account Number</string>
+
+    <string name="bank">ATM BNI</string>
+    <string name="ibanking">Internet Banking BNI</string>
+    <string name="mbanking">Mobile Banking BNI</string>
+    <string name="sbanking">SMS Banking BNI</string>
+    <string name="atm_bersama">ATM Bersama</string>
+
+    <string name="dummy_text">
+        1. Insert your card\n
+        2. Select Language\n
+        3. Insert your PIN ATM\n
+        4. Select “Other”\n
+        5. Select “Transfer”\n
+        6. Select “Virtual Accunt Billing”\n
+        7. Insert Virtual Account Number\n
+        8.Your bill will appear in the screen\n
+        9. Select pay\n
+        10. Done </string>
+
+
+    <string name="rating">Rating and Review</string>
+    <string name="tukang_name">Ujang Erdin</string>
+    <string name="job">Tukang Genteng</string>
+    <string name="comment">Tukangnya ramah dan kerjaanya rapi,hasil kerjaannya cukup memuaskan</string>
+    <string name="back">Okay</string>
+
+    <string name="title_service">Service Detais</string>
+    <string name="order_detail">Genteng bocor mulu bang</string>
+    <string name="choose">Choose Tukang</string>
+    <string name="note">*Price of day</string>
+    <string name="title_photo">Attach a Photo</string>
+    <string name="optional">Your Address</string>
+    <string name="title_address">Address</string>
+    <string name="kecamatan">Kecamatan</string>
+    <string name="kelurahan">Kelurahan</string>
+
+    <string name="img">image</string>
+
+
+    <string name="welcome">Welcome</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="login">Login</string>
+    <string name="no_have_account">Don`t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="have_account">Already have an account?</string>
+
+    <string name="activity">Activity</string>
+    <string name="home">Home</string>
+    <string name="account">Account</string>
+    <string name="what_your_problem">What your problem of damage</string>
+    <string name="process_problem">Process your problem</string>
+    <string name="repairman_now">Repairman Now</string>
+
+    <string name="term_condition">Term and Condition</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="language">Language</string>
+    <string name="logout">Logout</string>
+    <string name="copyright">(c) NewKang2021</string>
+    <string name="user_name">Process your problem</string>
+    <string name="say_homepage">what you want to repair today</string>
+    <string name="user">Rafi</string>
+    <string name="noHp">+62 123456</string>
+    <string name="hint">Type your detaill problem</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="work_time">09:00 - 17:00</string>
+    <string name="detail_address">Detail Address: Behind School</string>
+
+
+</resources>
