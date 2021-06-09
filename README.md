@@ -21,25 +21,30 @@ Terbagi 3 path:
 ![Move Card To Doing](./guideline/ERD.png)
 
 ## Project Structure / File Grouping
-### Visualization (example, must be done by Android Team)
+### Visualization
 ```bash
-├── config
-|   ├── database.js
-├── database
-|   ├── migrations
+├── Newkang_App
+|   ├── .idea
+|   ├── app
+|   ├── gradle/wrapper
+├── Newkang_RecommenderSystem/Chatbot
+|   ├── Newkang_Recommender.ipynb
 ├── routes
-|   ├── api
-|   |   ├── index.js
-|   |   ├── feature-name
-|   |   |   ├── feature-name.route.js
-
+|   ├── index.js
+├── app.js
+├── package.json
+├── package-lock.json
 ```
-### Explanation (example, must be done by Android Team)
-- Folder `config` digunakan untuk menyimpan konfigurasi yang akan digunakan pada project ini, contohnya adalah konfigurasi untuk server database
-- Folder `database` digunakan untuk menyimpan keperluan database. 
+### Explanation
+- Folder `Newkang_App` digunakan untuk menyimpan konfigurasi Android App yang akan digunakan pada project ini.
+- Folder `Newkang_RecommenderSystem/Chatbot` digunakan untuk menyimpan ML Code and Modelling dari Recommender System. 
+- Folder `routes` digunakan sebagai rute dari app.js dan index.js, sebagai perantara antara model ML dengan Android melalui Cloud Backend Service
 
-## Work in Github
 ## Techstack
+- Kotlin
+- JavaScript
+- Python
+- Cloud - Google Compute Engine
 
 ## Weekly History Log
 ### Sprint I
